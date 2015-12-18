@@ -1,0 +1,26 @@
+{
+  "name": "actioncrawler",
+  "version": "0.1.0",
+  "description": "Crawling wrapper for webdriver",
+  "main": "lib/actioncrawler.js",
+  "scripts": {
+    "lint": "eslint .",
+    "test": "node --harmony_destructuring ./node_modules/.bin/_mocha",
+    "test-integration": "node --harmony_destructuring ./node_modules/.bin/_mocha --opts test-integration/mocha.opts test-integration"
+  },
+  "author": "Denny Britz",
+  "license": "ISC",
+  "dependencies": {
+    "bluebird": "^3.0.6",
+    "bunyan": "^1.5.1",
+    "lodash": "^3.10.1",
+    "webdriverio": "^3.3.0"
+  },
+  "devDependencies": {
+    "chai": "^3.4.1",
+    "eslint": "^1.10.3",
+    "eslint-config-airbnb": "^2.1.1",
+    "mocha": "^2.3.4",
+    "sinon": "^1.17.2"
+  }
+}
